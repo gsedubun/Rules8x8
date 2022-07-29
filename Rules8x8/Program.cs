@@ -1,4 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Serilog;
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.Console()
+    .CreateLogger();
 
 
 RulesEngine rulesEngine = new RulesEngine("SampleData.csv");

@@ -45,5 +45,10 @@ namespace Rules8x8.Tests
             Assert.Equal(7, res.OutputValue);
 
         }
+
+        [Fact]
+        public void ShouldFail(string val1, string val2, string val3, string val4){
+            
+        }
     }
 }
